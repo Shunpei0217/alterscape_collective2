@@ -1,0 +1,10 @@
+main {
+  position: sticky;
+  width: 1200px;
+  height: 800px;
+
+  .main-content {
+    background-image: url(assets/main_contents_background.png);
+    background-size: cover;
+  }
+}

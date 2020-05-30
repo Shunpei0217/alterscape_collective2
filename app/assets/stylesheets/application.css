@@ -1,0 +1,398 @@
+/* Roboto Regular */
+@font-face {
+  font-family: "Roboto Regular";
+  src: font-url('Roboto-Regular.ttf') format('truetype');
+}
+
+/* Roboto Thin */
+@font-face {
+  font-family: "Roboto Thin";
+  sor: font-url('Roboto-Thin.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+header {
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(225,225,225,0);
+  position: fixed;
+  z-index: 100;
+  border-bottom: 1px solid rgba(236,236,236,0.3);
+}
+
+.content {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header-left {
+  float: left;
+  display: inline-block;
+  height: 100px;
+  width: 13.9%;
+}
+
+.header-left img {
+  height: 100px;
+}
+
+.header-centre {
+  left: 50%;
+  display: inline-block;
+  width: 72.2%;
+  height: 100px;
+  line-height: 120px;
+  text-align: center;
+  color: rgba(202,200,204,0.8);
+}
+
+.header-centre img {
+  height: 25px;
+}
+
+.header-right {
+  float: right;
+  display: inline-block;
+  width: 13.9%;
+  height: 100px;
+  color: white;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li{
+  float: left;
+  display: inline-block;
+  width: 75px;
+  margin: 0 auto;
+  margin-top: 40px;
+  list-style: none;
+  text-align: center;
+  font-size: 14px;
+  /*--font-family: 'Roboto Regular';--*/
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-list li:hover {
+  background: linear-gradient(90deg,#fff 0, #fff 20%, #0ff 40%, #f0f 60%, #fff 80%, #fff 100%);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: menu 0.6s ease-in forwards;
+  background-size: 250%;
+}
+
+@keyframes menu {
+  0% {background-position: 0% 100%;}
+  100% {background-position: 60% 0%;}
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  /*background-image: url("../assets/main_contents_background.png"); -グラデーションの背景画像*/
+  background-size: cover;
+  /*  padding-top: 100px;  */
+  width: 100%;
+  height: 100%;
+  color: white; /*--一時的な色指定。配置をわかりやすくするため--*/
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+video {
+  position: relative;
+  width: 100vw;
+  background-size: cover;
+  z-index: -100;
+}
+
+.home-background-video {
+  position: relative;
+}
+
+.main-contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.upper-contents {
+  margin-top: 100px;
+  width: 100%;
+  height: 75%;
+}
+
+.bubbles {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  animation: horizontal 1s ease-in-out infinite alternate;
+}
+
+.bubble-1 {
+  transition: 0.3s;
+  width: 100px;
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  animation: vertical 1s ease-in-out infinite alternate;
+  animation-duration: 1.5s;
+}
+
+.bubble-1:hover {
+  transition: 0.3s;
+  width: 110px;
+}
+
+.bubble-2 {
+  transition: 0.3s;
+  width: 80px;
+  position: absolute;
+  top: 50px;
+  animation: vertical 1s ease-in-out infinite alternate;
+  animation-duration: 1.1s;
+}
+
+.bubble-2:hover {
+  transition: 0.3s;
+  width: 90px;
+}
+
+.bubble-3 {
+  transition: 0.3s;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: vertical 1s ease-in-out infinite alternate;
+  animation-duration: 1.3s;
+}
+
+.bubble-3:hover {
+  transition: 0.3s;
+  width: 100px;
+}
+
+@keyframes horizontal {
+    0% { transform:translateX( -3px); }
+  100% { transform:translateX(  0px); }
+}
+@keyframes vertical {
+    0% { transform:translateY(-10px); }
+  100% { transform:translateY(  0px); }
+}
+
+.lower-contents {
+  text-align: center;
+}
+
+.lower-contents p {
+  font-size: 25px;
+  font-color: rgba(255,255,255,0.5);
+}
+
+/* ↑home-background-videoに被せる形で動くシャボン玉の動画を挟む予定 */
+
+.content-title {
+  top: 200px;
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 100px;
+  color: rgba(202,200,204,0.8);
+}
+
+.content-title p {
+  font-family: "Roboto Thin";
+  width: 440px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.our-vision1 {
+  background-image: url("../assets/close_of_brain.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.virtual-reality {
+  background-image: url("../assets/VR boy.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  background-image: url("../assets/brain_burst.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.darker-layer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /*--background-color: rgba(0,0,0,0.6);--*/
+}
+
+form {
+  width: 500px;
+  position: absolute;
+  top: 180px;
+  padding: 30px 0;
+  right: 100px;
+  /*--background-color: rgba(0,0,0,0.7);--*/
+}
+
+.page-title {
+  float: right;
+  display: inline-block;
+  width: 80px;
+  height: 200px;
+  color: gray;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  position: absolute;
+  top: 300px;
+  right: 0;
+}
+
+.arrow-left {
+  float: left;
+  margin-top: 55%;
+}
+
+.title-contact {
+  writing-mode: vertical-rl;
+}
+
+input {
+  height: 25px;
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.5);
+}
+
+textarea {
+  width: 400px;
+  height: 150px;
+  margin-bottom: 20px;
+  background-color: rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+.input-email, .input-name {
+  width: 196px;
+  margin-bottom: 30px;
+}
+
+.input-subject {
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.submit-send {
+  transition: 0.2s;
+  width: 400px;
+  height: 35px;
+  border-radius: 2px;
+}
+
+.submit-send:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.8);
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(225,225,225,0);
+  border-top: 1px solid rgba(236,236,236,0.3);
+  background-image: url("../assets/gradient_background.png");
+  background-size: cover;
+}
+
+.footer-left {
+  float: left;
+  display: inline-block;
+  width: 13.9%;
+  height: 100px;
+  color: white;
+}
+
+.footer-center {
+  left: 50%;
+  display: inline-block;
+  width: 55%;
+  height: 100px;
+  margin: 0 80px 0 80px;
+  color: rgba(202,200,204,0.8);
+}
+
+.footer-right {
+  float: right;
+  display: inline-block;
+  width: 13.9%;
+  height: 100px;
+}
+
+.footer-menues li {
+  float: left;
+  display: inline-block;
+  width: 75px;
+  margin: 40px 25px 0px 25px;
+  list-style: none;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Roboto Regular';
+  cursor: pointer;
+  color: white;
+}
+
+.footer-menues li:hover {
+  background: linear-gradient(90deg,#fff 0, #fff 20%, #0ff 40%, #f0f 60%, #fff 80%, #fff 100%);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: menu 0.6s ease-in forwards;
+  background-size: 250%;
+}
+
+@keyframes menu {
+  0% {background-position: 0% 100%;}
+  100% {background-position: 60% 0%;}
