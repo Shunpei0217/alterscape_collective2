@@ -106,18 +106,18 @@ header {
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /*animation: menu 0.6s ease-in forwards;*/
+  animation: menu 0.6s ease-in forwards;
   background-size: 250%;
 }
 
-/*@keyframes menu {
+@keyframes menu {
   from {
     background-position: 0% 100%;
   }
   to {
     background-position: 60% 0%;
   }
-}*/
+}
 
 main {
   width: 100%;
@@ -444,3 +444,4 @@ footer {
 @keyframes menu {
   0% {background-position: 0% 100%;}
   100% {background-position: 60% 0%;}
+}
