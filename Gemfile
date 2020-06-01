@@ -67,3 +67,4 @@ group :production do
 end
 
 #HEROKUにデプロイするために追加。
+gem 'yui-compressor'
