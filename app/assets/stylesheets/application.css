@@ -1,14 +1,14 @@
 /* Roboto Regular */
-@font-face {
+/*@font-face {
   font-family: "Roboto Regular";
   src: font-url('Roboto-Regular.ttf') format('truetype');
-}
+}*/
 
 /* Roboto Thin */
-@font-face {
+/*@font-face {
   font-family: "Roboto Thin";
   sor: font-url('Roboto-Thin.ttf') format('truetype');
-}
+}*/
 
 * {
   margin: 0;
