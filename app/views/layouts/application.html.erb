@@ -7,12 +7,13 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="shortcut icon" href="../assets/TemplateData/favicon.ico">
+    <!--<link rel="shortcut icon" href="../assets/TemplateData/favicon.ico">-->
+    <link rel="shortcut icon" href="../assets/alterscape_collective_footer_logo.png">
     <link rel="stylesheet" href="../assets/TemplateData/style.css">
     <script src="../assets/TemplateData/UnityProgress.js"></script>
     <script src="../assets/Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "../assets/Build/WebGL Build.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "../assets/Build/MartonBuild.json", {onProgress: UnityProgress});
     </script>
   </head>
 
@@ -23,12 +24,12 @@
           <img src="../assets/alterscape_collective_icon.gif" alt="ICON">
         </div>
         <div class="header-centre">
-          <a href="#">ALTERSCAPE COLLECTIVE</a>
+          <a href="/">ALTERSCAPE COLLECTIVE</a>
         </div>
         <div class="header-right">
           <ul class="menu-list">
-            <li class="menu_vr"><a href="#vr_boy">VR</a></li>
-            <li class="menu_list"><a href="#contact">CONTACT</a></li>
+            <li class="menu_vr"><a href="/projects/index">VR</a></li>
+            <li class="menu_list"><a href="/#contact">CONTACT</a></li>
           </ul>
         </div>
       </div>
