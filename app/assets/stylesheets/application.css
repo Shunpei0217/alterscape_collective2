@@ -26,11 +26,25 @@ a {
   transition: 0.3s;
 }
 
+.fade_off {
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+
+.fade_on {
+  opacity: 1;
+}
+
+
 header {
   top: 0;
   width: 100%;
   height: 100px;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.5);
   position: fixed;
   z-index: 100;
   border-bottom: 1px solid rgba(236,236,236,0.3);
@@ -47,7 +61,7 @@ header {
   float: left;
   display: inline-block;
   height: 100px;
-  width: 13.9%;
+  width: 20%;
 }
 
 .header-left img {
@@ -57,7 +71,7 @@ header {
 .header-centre {
   left: 50%;
   display: inline-block;
-  width: 72.2%;
+  width: 60%;
   height: 100px;
   line-height: 100px;
   text-align: center;
@@ -75,7 +89,7 @@ header {
 .header-right {
   float: right;
   display: inline-block;
-  width: 13.9%;
+  width: 20%;
   height: 100px;
   color: white;
 }
@@ -89,7 +103,7 @@ header {
   float: left;
   display: inline-block;
   width: 75px;
-  margin: 0 auto;
+  margin: 0 0 0 20px;
   margin-top: 40px;
   list-style: none;
   text-align: center;
@@ -127,6 +141,7 @@ main {
 
 .main-content {
   /*background-image: url("../assets/main_contents_background.png"); -グラデーションの背景画像*/
+  position: relative;
   background-size: cover;
   /*  padding-top: 100px;  */
   width: 100%;
@@ -135,11 +150,12 @@ main {
   font-family: termina, sans-serif;
   font-style: normal;
   font-weight: 100;
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1));
 }
 
-video {
+.home-background-video {
   position: relative;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   z-index: -100;
 }
@@ -240,10 +256,87 @@ video {
 
 .lower-contents p {
   font-size: 25px;
-  font-color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.5);
+}
+
+.black-block {
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  color: white;
+}
+
+.black-block-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.black-block p {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 25px;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.black-block2 {
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  color: white;
+}
+
+.black-block-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.black-block2 p {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20px;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 /* ↑home-background-videoに被せる形で動くシャボン玉の動画を挟む予定 */
+
+.our-vision1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),black);
+}
+
+.purple-window-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -100;
+}
+
+.purple-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.purple-block {
+  width: 100%;
+  height: 30%;
+  background-color:black;
+}
 
 .content-title {
   top: 200px;
@@ -286,9 +379,10 @@ video {
   font-size: 14px;
 }
 
-.our-vision1 {
+.our-vision2 {
   position: relative;
-  background-image: url("../assets/close_of_brain3.png");
+  background: linear-gradient(black,rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0)),
+  url("../assets/close_of_brain3.png");
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -308,35 +402,42 @@ video {
   writing-mode: vertical-rl;
 }
 
+/*----------ここまでがour vision------------*/
+
+/*----------ここからがour expertise----------*/
+
 .virtual-reality {
-  background-image: url("../assets/VR boy.png");
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1)),
+  url("../assets/VR boy.png");
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 
-/*----------ここまでがour vision------------*/
-
-/*----------ここからがour expertise----------*/
-
 .our-expertise-contents {
   width: 100%;
-  height: 100%;
+  height: calc(100%-100px);
   padding-top: 100px;
   color: white;
   font-family: roboto, sans-serif;
   font-style: normal;
   font-weight: 300;
-  position: absolute;
+  position: relative;
   /*right: 5%;*/
 }
 
-.our-expertise-contents h2 {
+.virtual-reality h2 {
   padding-top: 10%;
   font-family: termina, sans-serif;
   font-style: normal;
   font-weight: 100;
   text-align: center;
+  font-size: 18px;
+  width: 100%;
+  color: white;
+  position: absolute;
+  bottom: 50px;
 }
 
 .our-expertise-content {
@@ -362,6 +463,25 @@ video {
   font-style: normal;
   font-weight: 500;
 }
+
+/*.black-block2 {
+  position: absolute;
+  bottom: -232%;
+  width: 100%;
+  height: 700px;
+  background-image: url(../assets/black_gradient_bg.png);
+  background-size: cover;
+  text-align: center;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: white;
+}
+
+.black-block2 p {
+  font-size: 20px;
+  margin: 200px 0 0 0;
+}*/
 
 /*----------ここまでがour expertise----------*/
 
@@ -602,6 +722,9 @@ footer {
   background-size: cover;
 }
 
+.webgl-content {
+}
+
 .future-project {
   width: 100%;
   height: 100%;
@@ -613,4 +736,126 @@ footer {
   padding-top: 100px;
   width: 100%;
   height: calc(100%-100px);
+}
+
+/*----------ここまでがvr videoページ----------*/
+
+/*----------ここからSupportページ----------*/
+
+.support {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/cell_image.png);
+  background-size: cover;
+  color: white;
+}
+
+.donate {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.donate-container p {
+  width: 450px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.donate-container a {
+  display: inline-block;
+  transition: 0.6s;
+  width: 150px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 100px;
+  margin-top: 50px;
+  border-radius: 30px;
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  background-color: #ec008c;
+  border: 2px solid #ff0000;
+}
+
+.donate-container a:hover {
+  transition: 0.6s;
+  color: white;
+  box-shadow:3px 3px 60px 2px #ec008c;
+}
+
+.lower-text {
+  margin-bottom: 50px;
+}
+
+.donate-container img {
+  margin-left: 3%;
+  width: 550px;
+}
+
+.donate-description {
+  float: left;
+}
+
+.bettering-the-community {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.our-charities {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+}
+
+/*----------ここまでがSupportページ----------*/
+
+/*----------ここからがTeamページ----------*/
+
+.about {
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4),rgba(0,0,0,1)),
+  url(../assets/about_background.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.content2 {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-container {
+  width: 100%;
+  padding-top: 100px;
+  height: calc(100%-100px);
+  text-align: center;
+}
+
+.about-container h2 {
+  margin-top: 5%;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.about-container p {
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
 }

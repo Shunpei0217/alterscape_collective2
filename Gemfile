@@ -66,4 +66,4 @@ group :production do
   gem 'pg'
 end
 
-#HEROKUにデプロイするために追加。
+gem "jquery-rails"
