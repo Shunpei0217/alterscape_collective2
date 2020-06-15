@@ -31,3 +31,12 @@ $(function(){
     });
   });
 });
+
+$(document).on({
+    mouseenter:function(){
+        $(this).find('.projects-thumbnail-video')[0].play();
+    },
+    mouseleave:function(){
+        $(this).find('.projects-thumbnail-video')[0].pause();
+    }
+},'.project-thumbnail');

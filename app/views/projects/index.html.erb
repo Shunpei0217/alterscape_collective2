@@ -1,43 +1,30 @@
 <div class="projects">
-  <div class="title-right">
-    <p class="our-vision-vertical">PROJECTS</p>
+  <div class="black-background"></div>
+  <div class="projects-right">
+    <p class="projects-vertical">PROJECTS</p>
   </div>
   <div class="content">
     <div class="projects-container">
       <div class="projects-content upper-content">
         <div class="project-thumbnail">
-          <h2>VR Project</h2>
-          <img src="../assets/vr_thumbnail1.png">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          <h2><a href="/vrgame/index">Demystifying Epilepsy</a></h2>
+          <a href="/vrgame/index"><video class="projects-thumbnail-video" poster="../assets/poster_thumbnail1.png" src="../assets/projects_thumbnail1.mp4" loop></video></a>
+          <!--<img src="../assets/vr_thumbnail1.png">-->
+          <p>Enter an interactive virtual reality simulation that takes you through the stages of an epileptic seizure.
           </p>
         </div>
       </div>
       <div class="projects-content lower-content">
         <div class="project-thumbnail">
-          <h2>Visualising Epilepsy</h2>
-          <img src="../assets/vr_thumbnail2.png">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          <h2><a href="/film/index">Visualising Epilepsy</a></h2>
+          <a href="/film/index"><video class="projects-thumbnail-video" poster="../assets/poster_thumbnail2.png" src="../assets/projects_thumbnail2.mp4" loop></video></a>
+          <!--<img src="../assets/vr_thumbnail2.png">-->
+          <p>View a film performance piece that plays with the concept of experiencing an epileptic seizure through virtual reality.
           </p>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="vr-film">
-  <div class="webgl-content">
-    <div id="unityContainer" style="width: 900px; height: 550px"></div>
-    <!--<div class="footer">
-      <div class="webgl-logo"></div>
-      <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-      <div class="title">Epilepsy</div>
-    </div>-->
-  </div>
-</div>
-<div class="future-project">
-  <div class="title-right">
-    <p class="our-vision-vertical">PROJECT TITLE</p>
-  </div>
-  <div class="content">
-    <div class="container"></div>
-  </div>
-</div>
+
+<%= render 'shared/footer' %>

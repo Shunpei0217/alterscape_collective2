@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   get "team/index" => "team#index"
   get "support/index" => "support#index"
   get "join/index" => "join#index"
+  get "vrgame/index" => "vrgame#index"
+  get "film/index" => "film#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

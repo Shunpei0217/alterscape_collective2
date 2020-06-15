@@ -51,7 +51,7 @@ header {
 }
 
 .content {
-  width: 1100px;
+  width: 90%;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -153,11 +153,20 @@ main {
   background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1));
 }
 
+.black-background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -2;
+}
+
 .home-background-video {
   position: relative;
   width: 100%;
   background-size: cover;
-  z-index: -100;
+  z-index: -1;
 }
 
 .home-background-video {
@@ -307,117 +316,35 @@ main {
 
 /* ↑home-background-videoに被せる形で動くシャボン玉の動画を挟む予定 */
 
-.our-vision1 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),black);
-}
-
-.purple-window-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -100;
-}
-
-.purple-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 1100px;
-  height: 100%;
-  margin: 0 auto;
-}
-
-.purple-block {
-  width: 100%;
-  height: 30%;
-  background-color:black;
-}
-
-.content-title {
-  top: 200px;
-  position: absolute;
-  margin-top: 130px;
-  margin-left: 100px;
-  color: rgba(202,200,204,0.8);
-}
-
-.content-title p {
-  font-family: "Roboto Thin";
-  width: 440px;
-  font-size: 12px;
-  text-align: left;
-}
-
-.our-vision-contents {
-  float: left;
-  width: 35%;
-  padding-top: 100px;
-  color: white;
-  font-family: roboto, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  position: absolute;
-  right: 5%;
-}
-
-.our-vision-contents h2 {
-  padding-top: 10%;
-  font-family: termina, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 20px;
-}
-
-.our-vision-contents p {
-  width: 90%;
-  padding-top: 20px;
-  font-size: 14px;
-}
-
-.our-vision2 {
-  position: relative;
-  background: linear-gradient(black,rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0)),
-  url("../assets/close_of_brain3.png");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.title-right {
-  position: absolute;
-  right: 3%;
-  font-family: termina, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  color: white;
-  padding-top: 20%;
-}
-
-.our-vision-vertical {
-  writing-mode: vertical-rl;
-}
-
-/*----------ここまでがour vision------------*/
-
 /*----------ここからがour expertise----------*/
 
 .virtual-reality {
   position: relative;
   background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1)),
-  url("../assets/VR boy.png");
+  url("../assets/vr_boy_bg.png");
   background-size: cover;
   width: 100%;
   height: 100%;
+  color: white;
+}
+
+.our-expertise-right {
+  position: absolute;
+  top: calc(50% + 50px - 81.565px);
+  right: 2%;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: white;
+}
+
+.our-expertise-vertical {
+  writing-mode: vertical-rl;
 }
 
 .our-expertise-contents {
   width: 100%;
-  height: calc(100%-100px);
+  height: calc(100% - 100px);
   padding-top: 100px;
   color: white;
   font-family: roboto, sans-serif;
@@ -427,17 +354,67 @@ main {
   /*right: 5%;*/
 }
 
-.virtual-reality h2 {
-  padding-top: 10%;
+.explore-section {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+}
+
+.explore-section h2 {
+  transition: 0.3s;
+  position: absolute;
+  top: 19.5%;
+  left: 32%;
   font-family: termina, sans-serif;
   font-style: normal;
   font-weight: 100;
-  text-align: center;
-  font-size: 18px;
-  width: 100%;
+  font-size: 35px;
+  width: 50%;
   color: white;
+  border: 1px solid rgba(0,0,0,0);
+  border-radius: 20px;
+  text-align: center;
+  line-height: 140px;
+  letter-spacing: 2px;
+}
+
+.explore-section h2:hover {
+  transition: 0.3s;
+  box-shadow: 0 0 60px white;
+  font-weight: 200;
+}
+
+.our-expertise-description-section {
+  position: relative;
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+.our-expertise-description {
   position: absolute;
-  bottom: 50px;
+  top: 40%;
+  left: 5%;
+  width: 80%;
+  height: 100%;
+}
+
+.our-expertise-description h2 {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.our-expertise-description p {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 .our-expertise-content {
@@ -457,11 +434,23 @@ main {
 
 .our-expertise-contents h1 {
   text-align: center;
-  margin-top: 40%;
-  font-size: 45px;
-  font-family: roboto, sans-serif;
+  margin: 0 auto;
+  margin-top: 32%;
+  font-size: 40px;
+  font-family: montserrat, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
+  letter-spacing: 5px;
+  line-height: 133px;
+  width: 270px;
+  border: 1px solid rgba(0,0,0,0);
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.our-expertise-contents h1:hover {
+  transition: 0.4s;
+  box-shadow: 0 0 60px 2px white;
 }
 
 /*.black-block2 {
@@ -485,28 +474,288 @@ main {
 
 /*----------ここまでがour expertise----------*/
 
+/*----------ここからがOur vision----------*/
+
+.our-vision1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),black);
+}
+
+.our-vision-right {
+  position: absolute;
+  top: calc(50% + 50px - 59.055px);
+  right: 2%;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: white;
+}
+
+.our-vision-vertical {
+  writing-mode: vertical-rl;
+}
+
+.purple-window-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -100;
+}
+
+.sub-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 100px;
+  width: 90%;
+  height: calc(100% - 100px);
+  margin: 0 auto;
+}
+
+.purple-block {
+  display: table;
+  width: 100%;
+  height: 30%;
+  background-color:black;
+  text-align: center;
+  color: white;
+}
+
+.purple-block p {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.content-title {
+  top: 200px;
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 100px;
+  color: rgba(202,200,204,0.8);
+}
+
+.content-title p {
+  font-family: "Roboto Thin";
+  width: 440px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.floating-button-container {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  margin-left: 40%;
+  animation: horizontal 1s ease-in-out infinite alternate;
+}
+
+.purple-button {
+  transition: 0.3s;
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
+  width: 100px;
+  animation: vertical 1s ease-in-out infinite alternate;
+  animation-duration: 1.4s;
+}
+
+.purple-button:hover {
+  transition: 0.3s;
+  width: 110px;
+}
+
+.our-vision-contents {
+  float: left;
+  width: 35%;
+  color: white;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  position: absolute;
+  right: 5%;
+  z-index: 2;
+}
+
+.our-vision-contents h2 {
+  padding-top: 10%;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.our-vision-contents p {
+  width: 90%;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.our-vision2 {
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.3),rgba(0,0,0,0.3),rgba(0,0,0,0.3),rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+  url("../assets/close_of_brain3.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.our-vision2-right {
+  position: absolute;
+  top: calc(50% + 50px - 59.055px);
+  right: 2%;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: white;
+}
+
+.our-vision2-vertical {
+  writing-mode: vertical-rl;
+}
+
+.orange-button {
+  transition: 0.3s;
+  position: absolute;
+  bottom: 10%;
+  left: 42%;
+  width: 100px;
+  animation: vertical 1s ease-in-out infinite alternate;
+  animation-duration: 1.4s;
+  z-index: -100;
+}
+
+.orange-button:hover {
+  transition: 0.3s;
+  width: 110px;
+}
+
+/*----------ここまでがour vision------------*/
+
+/*----------ここからがContact-----------*/
+
 #contact {
-  background-image: url("../assets/brain_burst.png");
+  background-image: url("../assets/contact_bg.png");
   background-size: cover;
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.darker-layer {
+.contact-right {
+  position: absolute;
+  top: calc(50% + 50px - 59.055px);
+  right: 2%;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: white;
+}
+
+.contact-vertical {
+  writing-mode: vertical-rl;
+}
+
+.contact-container {
   width: 100%;
+  height: 50%;
+  margin-top: 15%;
+}
+
+.get-in-touch-section {
+  float: left;
+  width: 500px;
   height: 100%;
-  position: relative;
-  /*--background-color: rgba(0,0,0,0.6);--*/
+  color: white;
+  margin-left: 10%;
+}
+
+.get-in-touch-section h2 {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.get-in-touch-section p {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  padding-bottom: 25px;
+}
+
+.contact-form-section {
+  float: right;
+  width: 300px;
+  height: 100%;
+  margin-right: 10%;
 }
 
 form {
-  width: 500px;
-  position: absolute;
-  top: 180px;
-  padding: 30px 0;
-  right: 100px;
-  /*--background-color: rgba(0,0,0,0.7);--*/
+  width: 400px;
+  /*--background-color: rgba(0,0,0,0.5);--*/
+}
+
+.input-email, .input-name, .input-subject {
+  width: 300px;
+  height: 30px;
+  background-color: rgba(0,0,0,0.5);
+  border: 0px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: white;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  background-color: rgba(0,0,0,0.5);
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+::placeholder {
+  padding-left: 10px;
+  color: rgba(255,255,255,0.6);
+}
+
+textarea::placeholder {
+  padding-top: 5px;
+}
+
+.submit-send {
+  transition: 0.2s;
+  margin-left: 250px;
+  width: 50px;
+  height: 30px;
+  border: 0px;
+  border-radius: 2px;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  cursor: pointer;
+  background-color: rgba(35,16,21,0.8);
+  color: white;
+}
+
+.submit-send:hover {
+  transition: 0.2s;
+  background-color: rgba(35,16,21,1);
 }
 
 .page-title {
@@ -514,7 +763,7 @@ form {
   display: inline-block;
   width: 80px;
   height: 200px;
-  color: gray;
+  color: rgba(255,255,255,0.6);
   font-family: termina, sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -524,51 +773,13 @@ form {
   right: 0;
 }
 
-.arrow-left {
-  float: left;
-  margin-top: 55%;
-}
-
 .title-contact {
   writing-mode: vertical-rl;
 }
 
-input {
-  height: 25px;
-  border: 1px solid rgba(255,255,255,0.5);
-  background-color: rgba(255,255,255,0.5);
-}
+/*----------ここまでがContact----------*/
 
-textarea {
-  width: 400px;
-  height: 150px;
-  margin-bottom: 20px;
-  background-color: rgba(255,255,255,0.5);
-  border: 1px solid rgba(255,255,255,0.5);
-}
-
-.input-email, .input-name {
-  width: 196px;
-  margin-bottom: 30px;
-}
-
-.input-subject {
-  width: 400px;
-  margin-bottom: 10px;
-}
-
-.submit-send {
-  transition: 0.2s;
-  width: 400px;
-  height: 35px;
-  border-radius: 2px;
-}
-
-.submit-send:hover {
-  transition: 0.2s;
-  cursor: pointer;
-  background-color: rgba(255,255,255,0.8);
-}
+/*----------ここからFooter----------*/
 
 footer {
   position: relative;
@@ -576,17 +787,26 @@ footer {
   height: 100px;
   background-color: rgba(225,225,225,0);
   border-top: 1px solid rgba(236,236,236,0.3);
-  background-image: url("../assets/gradient_background.png");
-  background-size: cover;
+  /*background-image: url("../assets/gradient_background.png");
+  background-size: cover;*/
+  background-color: black;
 }
 
 .footer-left {
+  position: relative;
   float: left;
   display: inline-block;
-  width: 13.9%;
+  width: 20%;
   height: 100px;
   color: gray;
   font-size: 12px;
+}
+
+.footer-left img {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 120px;
 }
 
 .footer-center {
@@ -595,43 +815,82 @@ footer {
   right: 0;
   top: 0;
   bottom :0;
-  margin:  auto;
+  margin: 0 auto;
   display: inline-block;
-  width: 55%;
+  /*width: 72.2%;*/
+  width: 60%;
   height: 100px;
   color: rgba(202,200,204,0.8);
   text-align: center;
 }
 
 .footer-center img {
-  float: left;
-  width: 80px;
-  margin: 0 25px;
-  padding-top: 10px;
+  width: 60px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.logo-list {
+  text-align: center;
 }
 
 .footer-right {
   float: right;
   display: inline-block;
-  width: 13.9%;
+  width: 20%;
   height: 100px;
+  text-align: center;
 }
 
-.bordered-list {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+.footer-right ul {
+  margin-left: 50px;
+}
+
+.footer-right li {
+  float:left;
+  width: 45px;
+  margin-top: 37px;
+  text-align: center;
+}
+
+.footer-right img {
+  width: 20px;
+}
+
+.footer-right a {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-right p {
+  position: absolute;
+  bottom: 0;
+  font-size: 13px;
+  margin-right: 20px;
+  color: grey;
+}
+
+.footer-menu-list {
+  margin-top: 40px;
+}
+
+.footer-menues {
+  height: 100%;
+  margin-left: calc(50% - 237.5px);
+  text-align: center;
 }
 
 .footer-menues li {
   float: left;
   display: inline-block;
   width: 75px;
-  margin-top: 40px;
-  padding: 0 27px;
+  padding: 0 10px;
   list-style: none;
   text-align: center;
   font-size: 14px;
-  font-family: 'Roboto Regular';
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   cursor: pointer;
   color: white;
 }
@@ -655,22 +914,41 @@ footer {
 .projects {
   width: 100%;
   height: 100%;
-  background-image: url(../assets/dark_gradient_bg.png);
+  background-image: url(../assets/projects_bg.png);
+  background-size: cover;
   color: white;
+}
+
+.projects-right {
+  position: absolute;
+  top: calc(50% + 50px - 54.155px);
+  right: 2%;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: white;
+}
+
+.projects-vertical {
+  writing-mode: vertical-rl;
 }
 
 .projects-container {
   padding-top: 100px;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 100px);
 }
 
 .projects-content {
   width: 100%;
-  height: 40%;
+  height: 45%;
 }
 
 .upper-content {
+  margin-top: 25px;
+}
+
+.lower-content {
   margin-top: 25px;
 }
 
@@ -683,11 +961,15 @@ footer {
   margin-left: 8%;
 }
 
-.projects-content img {
+.projects-content video {
   float: left;
   display: inline-block;
   width: 350px;
   margin-left: 8%;
+}
+
+.projects-content video:hover {
+  cursor: pointer;
 }
 
 .projects-content p {
@@ -702,27 +984,114 @@ footer {
   width: 100%;
 }
 
+/*----------ここまでがprojectsページ----------*/
+
+/*----------ここからvrgameページ----------*/
 .vr-film {
   width: 100%;
-  height: 100%;
+  height: 250%;
+  background: linear-gradient(rgba(0,0,0,1),rgba(23,17,52,1));
   position: relative;
+  color: white;
+}
+
+.vr-film h2 {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.vr-film p {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.vr-project-title {
+  position: fixed;
+  top: calc(50% + 50px - 83.11px);
+  left: 2%;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  z-index: 100;
+}
+
+.vr-project-title p {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 .webgl-content {
   position: absolute;
-  top: 0;
+  top: 20% !important;
 }
 
-/*----------ここからprojectsページ----------*/
-
-/*----------ここからvr videoページ----------*/
-
-.vr-film {
-  background-image: url(../assets/vrscreen_background.png);
-  background-size: cover;
+.invisible-block {
+  width: 100%;
+  height: 550px;
 }
 
-.webgl-content {
+.vr-view-container {
+  width: 100%;
+  height: 90vh;
+}
+
+.vr-view-container-third {
+  width: 100%;
+  height: 50vh;
+}
+
+.demystifying-epilepsy-title {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.vr-description-container {
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.vr-description-title {
+  margin-bottom: 40px;
+}
+
+.vr-description p {
+  margin-bottom: 25px;
+}
+
+.vr-credits-container {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.vr-credits-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.vr-credits-member {
+  width: 200px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.vr-credits-member-left {
+  float: left;
+  clear: both;
+}
+
+.vr-credits-member-right {
+  float: right;
 }
 
 .future-project {
@@ -735,19 +1104,167 @@ footer {
 .container {
   padding-top: 100px;
   width: 100%;
-  height: calc(100%-100px);
+  height: calc(100% - 100px);
 }
 
-/*----------ここまでがvr videoページ----------*/
+/*----------ここまでがvrgameページ----------*/
+
+/*----------ここからがfilmページ----------*/
+
+.film {
+  width: 100%;
+  height: 300%;
+  background-image: url(../assets/film_bg_1.png);
+  background-size: cover;
+  color: white;
+}
+
+.film h2 {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.film p {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.view-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.film-title {
+  position: fixed;
+  top: calc(50% + 50px - 49.78px);
+  left: 2%;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  z-index: 100;
+}
+
+.film-title p {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.film-container {
+  padding-top: 100px;
+  width: 100%;
+  height: calc(100% - 100px);
+}
+
+.film-container iframe {
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.visualising-epilepsy-title {
+  margin-left: 10%;
+}
+
+.film-description-container {
+  width: 51%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20%;
+}
+
+.film-description-title {
+  margin-bottom: 40px;
+}
+
+.film-description p {
+  margin-bottom: 25px;
+}
+
+.relative {
+  position: relative;
+}
+
+.credit-container {
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+  width: 35%;
+}
+
+.credit-title {
+  margin-bottom: 30px;
+}
+
+.credit-member {
+  margin-bottom: 25px;
+}
+
+/*----------ここまでがfilmページ----------*/
 
 /*----------ここからSupportページ----------*/
 
 .support {
+  position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../assets/cell_image.png);
-  background-size: cover;
   color: white;
+}
+
+.support-bg-video {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+.support-dark-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3),rgba(0,0,0,0.3),rgba(0,0,0,1));
+  z-index: 0;
+}
+
+.support-container {
+  position: relative;
+  display: table;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.support-title {
+  position: fixed;
+  top: calc(50% + 50px - 49.78px);
+  left: 2%;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  z-index: 100;
+}
+
+.support-title p {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.donate-section {
+  margin-top: 10%;
+  width: 100%;
+  height: calc(100% - 100px);
 }
 
 .donate {
@@ -757,6 +1274,7 @@ footer {
   font-family: termina, sans-serif;
   font-style: normal;
   font-weight: 100;
+  font-size: 20px;
 }
 
 .donate-container p {
@@ -766,55 +1284,191 @@ footer {
   font-family: roboto, sans-serif;
   font-style: normal;
   font-weight: 300;
+  font-size: 14px;
 }
 
-.donate-container a {
-  display: inline-block;
-  transition: 0.6s;
-  width: 150px;
-  letter-spacing: 2px;
-  text-align: center;
-  padding: 10px;
-  margin-left: 100px;
+.give-today-section {
+  clear: both;
+  width: 500px;
   margin-top: 50px;
-  border-radius: 30px;
-  font-family: montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 20px;
-  background-color: #ec008c;
-  border: 2px solid #ff0000;
 }
 
-.donate-container a:hover {
-  transition: 0.6s;
-  color: white;
-  box-shadow:3px 3px 60px 2px #ec008c;
+.give-today-section img {
+  width: 100px;
+  margin-left: calc(50% - 50px);
+  margin-top: 30px;
 }
 
-.lower-text {
-  margin-bottom: 50px;
-}
-
-.donate-container img {
-  margin-left: 3%;
-  width: 550px;
-}
 
 .donate-description {
   float: left;
 }
 
 .bettering-the-community {
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 60vh;
+  color: white;
   background-color: black;
 }
 
-.our-charities {
-  width: 100%;
+.stock-image-section {
+  float: left;
+  width: 45%;
   height: 100%;
-  background-color: gray;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.stock-image-section img {
+  width: 70%;
+}
+
+.bettering-the-community-description-section {
+  float: right;
+  width: 45%;
+  height: 100%;
+  margin-right: 5%;
+}
+
+.bettering-the-community-description {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bettering-the-community-description h2 {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.bettering-the-community-description p {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.our-charities {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-color: black;
+  color: white;
+}
+
+.our-charities-upper-container {
+  width: 100%;
+  height: 20%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.our-charities-description-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.our-charities-description-container h2 {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.our-charities-description-container p {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.our-charity-content {
+  width: 90%;
+  margin: 0 auto;
+  height: 30%;
+}
+
+.charity-logo-container {
+  float: left;
+  width: 40%;
+  margin-left: 10%;
+}
+
+.charity-logo-container img {
+  width: 50%;
+}
+
+.charity-logo-container h2 {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.our-charity-description {
+  float: right;
+  width: 50%;
+}
+
+.our-charity-description p {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 25px;
+  width: 80%;
+}
+
+.donate-action {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-color: black;
+  color: white;
+}
+
+.question-section {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  /*margin-top: 10%;*/
+  margin-bottom: 10%;
+}
+
+.question-section h2 {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.donate-button-section {
+  width: 50%;
+  margin-top: 5%;
+  margin: 0 auto;
+  text-align: center;
+  animation: horizontal 1.3s ease-in-out infinite alternate
+}
+
+.donate-button-section img {
+  transition: 0.3s;
+  width: 120px;
+  animation: vertical 1s ease-in-out infinite alternate;
+  animation-duration: 1.5s;
+}
+
+.donate-button-section img:hover {
+  transition: 0.3s;
+  width: 125px;
 }
 
 /*----------ここまでがSupportページ----------*/
@@ -822,12 +1476,30 @@ footer {
 /*----------ここからがTeamページ----------*/
 
 .about {
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4),rgba(0,0,0,1)),
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,1)),
   url(../assets/about_background.png);
   background-size: cover;
   width: 100%;
   height: 100%;
   color: white;
+}
+
+.about-title {
+  position: fixed;
+  top: calc(50% + 50px - 35.975px);
+  left: 2%;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  z-index: 100;
+}
+
+.about-title p {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 .content2 {
@@ -845,17 +1517,369 @@ footer {
 }
 
 .about-container h2 {
-  margin-top: 5%;
+  margin-top: 10%;
   font-family: termina, sans-serif;
   font-style: normal;
   font-weight: 100;
 }
 
 .about-container p {
-  width: 450px;
+  width: 50%;
   margin: 0 auto;
   margin-top: 30px;
   font-family: roboto, sans-serif;
   font-style: normal;
   font-weight: 300;
+}
+
+.the-team {
+  position: relative;
+  width: 100%;
+  height: 650%;
+  color: white;
+  background: linear-gradient(rgba(0,0,0,1),rgba(102,25,76,1),rgba(62,35,62,1));
+  /*background-image: url(../assets/the_team_bg.png);
+  background-size: cover;/*
+  /*background-color: black;*/
+}
+
+.the-team-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 100px;
+  width: 90%;
+  height: calc(100% - 100px);
+  margin: 0 auto;
+}
+
+.the-team-title-section {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.the-team-title-section h2 {
+  margin-left: 14%;
+}
+
+.contributors-title-section {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.contributors-title-section h2 {
+  margin-left: 13%;
+}
+
+.members-section {
+  width: 100%;
+}
+
+.member-section {
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+  /*background-color: silver;
+  border-bottom: 1px solid white;*/
+}
+
+.member-section-exception {
+  width: 90%;
+  height: 550px;
+  margin: 0 auto;
+  /*background-color: silver;
+  border-bottom: 1px solid white;*/
+}
+
+.member-photo-section-right-exception {
+  float: right;
+  width: 30%;
+  margin-top: 120px;
+}
+
+.member-photo-section-right-exception img {
+  width: 180px;
+  border-radius: 1000px;
+}
+
+.member-photo-section-center {
+  float: center;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.member-photo-section-center img {
+  width: 60%;
+  border-radius: 1000px;
+}
+
+.member-photo-section-left {
+  float: left;
+  width: 30%;
+  text-align: right;
+}
+
+.member-photo-section-left img {
+  width: 180px;
+  border-radius: 1000px;
+}
+
+.member-introduction-right {
+  float: right;
+  width: 50%;
+  margin-right: 2%;
+}
+
+.member-introduction-right-mirador {
+  float: right;
+  width: 48%;
+}
+
+.member-photo-section-right {
+  float: right;
+  width: 30%;
+  text-align: left;
+}
+
+.member-photo-section-right img {
+  width: 180px;
+  border-radius: 1000px;
+}
+
+.member-introduction-left {
+  float: left;
+  width: 50%;
+  margin-left: 2%;
+}
+
+.member-introduction-left-eric {
+  float: left;
+  width: 48%;
+  margin-bottom: 30px;
+  margin-left: 2%;
+}
+
+.members-section h3 {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.member-name span {
+  font-size: 12px;
+}
+
+.members-section p {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: white;
+  font-size: 14px;
+}
+
+/*----------ここまでがTeamページ----------*/
+
+/*----------ここからがJoinページ----------*/
+
+.join {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+.join-container {
+  position: relative;
+  display: table;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.join-title {
+  position: fixed;
+  top: calc(50% + 50px - 23.28px); /*-- ←join-containerの高さの半分の位置からテキストの長さの半分だけ引いた位置 -- */
+  left: 2%;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  z-index: 100;
+}
+
+.join-title p {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-left: 2%;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.join-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: calc(100% - 100px);
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.collaborate-with-us {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  margin-top: 15%;
+  text-align: center;
+}
+
+.collaborate-with-us h2 {
+  padding-top: 5%;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.collaborate-with-us p {
+  margin-top: 30px;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.why {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.4),rgba(0,0,0,0.4),rgba(0,0,0,0.4),rgba(0,0,0,1)),
+  url(../assets/why_background.png);
+  background-size: cover;
+  color: white;
+}
+
+.why-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: calc(100% - 100px);
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.why-container {
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.why-container h2 {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.why-container p {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 25px;
+  width: 80%;
+}
+
+.get-in-touch {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.get-in-touch-video {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  z-index: -100;
+}
+
+.dark-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  z-index: 1;
+}
+
+.get-in-touch-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: calc(100% - 100px);
+  padding-top: 100px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.get-in-touch-container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 10%;
+  text-align: center;
+}
+
+.get-in-touch-container h2 {
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.get-in-touch-container p {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.contact-button-container {
+  margin: 0 auto;
+  width: 140px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.contact-button-container p {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 5px;
+  line-height: 50px;
+  margin-bottom: 20px;
 }
