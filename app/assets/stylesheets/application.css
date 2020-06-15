@@ -787,8 +787,6 @@ footer {
   height: 100px;
   background-color: rgba(225,225,225,0);
   border-top: 1px solid rgba(236,236,236,0.3);
-  /*background-image: url("../assets/gradient_background.png");
-  background-size: cover;*/
   background-color: black;
 }
 
