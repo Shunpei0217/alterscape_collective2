@@ -5,8 +5,6 @@ ruby '2.5.1'
 
 gem 'dotenv-rails' #環境変数をENVの形にするやつ
 
-gem 'mailcatcher' #開発環境でのGemが構築してくれるメールサーバー
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
@@ -43,7 +41,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  #gem 'sqlite3' #HEROKUにデプロイするために追加。
+  gem 'sqlite3' #HEROKUにデプロイするために追加。
 end
 
 group :development do
