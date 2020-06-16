@@ -30,6 +30,7 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 /.env
+app/assets/javascripts/Build/WebGL-TEST.data.unityweb
 app/assets/javascripts/Build/WebGLFinal.data.unityweb
 .git/objects/0d/c0ed70d9fd02cdf34a36a4231a4a9113536521
 .git/objects/36/1eb109db80537c917c885d5e6f32f915da2e07
