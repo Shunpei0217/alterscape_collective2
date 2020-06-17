@@ -701,6 +701,8 @@ main {
 
 form {
   width: 400px;
+  height: 100%;
+  margin: 0;
   /*--background-color: rgba(0,0,0,0.5);--*/
 }
 
@@ -727,6 +729,7 @@ textarea {
   font-family: roboto, sans-serif;
   font-style: normal;
   font-weight: 300;
+  resize: none;
 }
 
 ::placeholder {

@@ -6,5 +6,8 @@ Rails.application.routes.draw do
   get "join/index" => "join#index"
   get "vrgame/index" => "vrgame#index"
   get "film/index" => "film#index"
+
+  post "home/confirm" => "home#confirm"
+  post "home/thanks" => "home#thanks"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

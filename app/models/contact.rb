@@ -1,8 +1,9 @@
-class Contact include ActiveModel::Model
-  attr_accessor :name, :email, :content
+class Contact < ApplicationRecord
+  attr_accessor :name, :email, :subject, :message
 
-  validates :name, presence: true, length: {maximum: 40}
+  validates :name, presence: true
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  validates :email, presence: true, length: {maximum: 40}, format: {with: VALID_EMAIL_REGEX}
-  validates :content, presence: true, length: {maximum: 1000}
+  validates :email, presence: true, format: {with: VALID_EMAIL_REGEX}
+  validates :subject, presence: true, length: {maximum: 300}
+  validates :message, presence: true, length: {maximum: 1000}
 end
