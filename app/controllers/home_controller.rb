@@ -18,7 +18,7 @@ class HomeController < ApplicationController
     if params[:back]
       render :action => 'thanks'
     else
-      ContactMailer.received_mail(@contact).deliver_now
+      ContactMailer.received_email(@contact).deliver
       render :action => 'thanks'
     end
   end

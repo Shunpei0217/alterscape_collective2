@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root "home#index"
+  get 'home/confirm' => redirect("/")
+  get 'home/thanks' => redirect("/")
   get "projects/index" => "projects#index"
   get "team/index" => "team#index"
   get "support/index" => "support#index"
