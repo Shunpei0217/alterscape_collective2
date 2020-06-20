@@ -974,7 +974,7 @@ footer {
 /*----------ここからvrgameページ----------*/
 .vr-film {
   width: 100%;
-  height: 350%;
+  height: 300%;
   background: linear-gradient(rgba(0,0,0,1),rgba(23,17,52,1));
   position: relative;
   color: white;
@@ -1013,7 +1013,7 @@ footer {
 
 .webgl-content {
   position: absolute;
-  top: 18% !important;
+  top: 20% !important;
 }
 
 .invisible-block {
@@ -1043,12 +1043,12 @@ footer {
 
 .vr-view-container {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
 
 .vr-view-container-third {
   width: 100%;
-  height: 50vh;
+  height: 80vh;
 }
 
 .demystifying-epilepsy-title {
