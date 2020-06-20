@@ -5,16 +5,24 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
     <!--<link rel="shortcut icon" href="../assets/TemplateData/favicon.ico">-->
     <link rel="shortcut icon" href="https://dl.dropboxusercontent.com/s/sj8qxffptftohb0/alterscape_collective_footer_logo.png">
-    <link rel="stylesheet" href="../assets/TemplateData/style.css">
-    <script src="../assets/TemplateData/UnityProgress.js"></script>
-    <script src="../assets/Build/UnityLoader.js"></script>
-    <script>
+    <link rel="stylesheet" href="../WebGLGame/TemplateData/style.css">
+    <!--<link rel="stylesheet" href="../assets/TemplateData/style.css">-->
+    <script src="../WebGLGame/TemplateData/UnityProgress.js"></script>
+    <!--<script src="../assets/TemplateData/UnityProgress.js"></script>-->
+    <script src="../WebGLGame/Build/UnityLoader.js"></script>
+    <!--<script src="../assets/Build/UnityLoader.js"></script>-->
+    <!--<script>
+      window.onload = function(){
+        var unityInstance = UnityLoader.instantiate("unityContainer", "/WebGLGame/Build/AllScenes3.json", {onProgress: UnityProgress});
+      }
+    </script>-->
+    <!--<script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "../assets/Build/AllScenes3.json", {onProgress: UnityProgress});
-    </script>
+    </script>-->
   </head>
   <body>
     <header>

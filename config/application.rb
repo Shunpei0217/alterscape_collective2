@@ -23,7 +23,7 @@ module AlterscapeCollective
       address: "smtp.gmail.com",
       port: 587,
       user_name: 'iyasiken@gmail.com',
-      password: 'aryzaspdktzcqhkn',
+      password: 'vsigolwtrlqulvul',
     }
   end
 end

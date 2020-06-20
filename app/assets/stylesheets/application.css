@@ -159,7 +159,7 @@ main {
   width: 100%;
   height: 100%;
   background-color: black;
-  z-index: -2;
+  z-index: -10;
 }
 
 .home-background-video {
@@ -483,7 +483,7 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: -100;
+  z-index: -1;
 }
 
 .sub-content {
@@ -825,7 +825,7 @@ footer {
 }
 
 .footer-right ul {
-  margin-left: 50px;
+  margin-left: 50%;
 }
 
 .footer-right li {
@@ -846,10 +846,13 @@ footer {
 
 .footer-right p {
   position: absolute;
-  bottom: 0;
+  bottom: 3%;
+  right: 1%;
   font-size: 13px;
-  margin-right: 20px;
-  color: grey;
+  color: lightgrey;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .footer-menu-list {
@@ -1478,7 +1481,7 @@ footer {
 /*----------ここからがTeamページ----------*/
 
 .about {
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,1)),
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6),rgba(0,0,0,0.6),rgba(0,0,0,1)),
   url(https://dl.dropboxusercontent.com/s/97wu3il7ldam866/about_background.png);
   background-size: cover;
   width: 100%;
@@ -1663,13 +1666,15 @@ footer {
   float: left;
   width: 50%;
   margin-left: 2%;
+  text-align: right;
 }
 
 .member-introduction-left-eric {
   float: left;
-  width: 48%;
+  width: 50%;
   margin-bottom: 30px;
   margin-left: 2%;
+  text-align: right;
 }
 
 .members-section h3 {
@@ -1818,7 +1823,7 @@ footer {
   position: relative;
   width: 100%;
   background-size: cover;
-  z-index: -100;
+  z-index: -1;
 }
 
 .dark-layer {

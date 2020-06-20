@@ -15,6 +15,12 @@
           <div class="title">Epilepsy</div>
         </div>-->
       </div>
+      <%= javascript_tag do %>
+        window.onload = function(){
+          console.log("Hellooooooooooooooooo");
+          var unityInstance = UnityLoader.instantiate("unityContainer", "/WebGLGame/Build/AllScenes3.json", {onProgress: UnityProgress});
+        }
+      <% end %>
       <div class="invisible-block"></div>
     </div>
     <div class="vr-view-container">

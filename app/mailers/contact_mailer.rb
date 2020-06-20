@@ -1,7 +1,7 @@
 class ContactMailer < ApplicationMailer
 
-  default from: "#{@contact}@gmail.com"
-  default to: "********@gmail.com" #ここに自分のアドレスを入れています
+  default from: "iyasiken@gmail.com"
+  default to: "iyasiken@gmail.com" #ここに自分のアドレスを入れています
 
   def received_email(contact)
     @contact = contact

@@ -16,7 +16,7 @@ class HomeController < ApplicationController
   def thanks
     @contact = Contact.new(contact_params)
     if params[:back]
-      render :action => 'thanks'
+      render :action => 'index'
     else
       ContactMailer.received_email(@contact).deliver
       render :action => 'thanks'
