@@ -371,7 +371,7 @@ main {
 }
 
 .explore-section h2 {
-  transition: 0.3s;
+  transition: 0.1s;
   position: absolute;
   top: 27.5%;
   left: 25%;
@@ -381,17 +381,16 @@ main {
   font-size: 35px;
   width: 50%;
   color: white;
-  border: 1px solid rgba(0,0,0,0);
-  border-radius: 20px;
+  /*border: 1px solid rgba(0,0,0,0);
+  border-radius: 20px;*/
   text-align: center;
   line-height: 135px;
   letter-spacing: 2px;
 }
 
 .explore-section h2:hover {
-  transition: 0.3s;
-  box-shadow: 0 0 60px white;
-  font-weight: 200;
+  /*box-shadow: 0 0 60px white;*/
+  text-shadow: 0 0 10px #fff, 0 0 25px #fff, 0 0 45px #0ff;
 }
 
 .our-expertise-description-section {
@@ -656,14 +655,16 @@ main {
   width: 100%;
   height: 50%;
   margin-top: 15%;
+  text-align: center; /*-----フォーム完成までこれでいくが、フォーム完成後除外する-----*/
 }
 
 .get-in-touch-section {
-  float: left;
+  /*float: left;*/   /*-----フォーム完成後に復活-----*/
   width: 500px;
   height: 100%;
   color: white;
-  margin-left: 10%;
+  /*margin-left: 10%;*/   /*-----フォーム完成後に復活-----*/
+  margin: 0 auto;   /*---フォーム完成後に除外-----*/
 }
 
 .get-in-touch-section h2 {
@@ -679,6 +680,15 @@ main {
   font-style: normal;
   font-weight: 300;
   padding-bottom: 25px;
+}
+
+.get-in-touch-section a {
+  transition: 0.3s;
+}
+
+.get-in-touch-section a:hover {
+  transition: 0.3s;
+  border-bottom: solid 1px white;
 }
 
 .contact-form-section {

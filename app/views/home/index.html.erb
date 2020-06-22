@@ -114,14 +114,14 @@
       <p class="contact-vertical">CONTACT</p>
     </div>
     <div class="sub-content">
-      <div class="contact-container">
+      <div class="contact-container"><!-----フォームができるまでtext-alignをセンターにする-->
         <div class="get-in-touch-section">
           <h2>Get in touch</h2>
           <p>We welcome diverse talent in our collective and are always on the lookout to work with new creatives from all walks of life.</p>
-          <p>So whether you want to collaborate on a future project, share your experiences and ideas, or simply just speak with one of our team members, contuct us today.</p>
-          <p>We'd love to hear from you!</p>
+          <p>So whether you want to collaborate on a future project, share your experiences and ideas, or simply just speak with one of our team members, contact us today.</p>
+          <p>We'd love to hear from you!<br><br><a href="mailto:hello@alterscapecollective.com">hello@alterscapecollective.com</a></p>
         </div>
-        <div class="contact-form-section">
+        <!--<div class="contact-form-section">
           <%= form_with model: @contact, :url => home_confirm_path, local: true do |form| %>
             <% if @contact.errors.any? %>
               <div class="alert alert-warning">
@@ -137,18 +137,8 @@
             <%= form.text_field :subject, :placeholder => "Subject", class: "input-subject" %>
             <%= form.text_area :message, :placeholder => "Message...", class: "textarea-message" %>
             <%= form.submit "Confirm", class: "submit-send" %>
-
-                <!----------下記htmlでのformタグ内容---------->
-              <!--<form action="#" method="post">
-                <input class="input-email" type="text" name="email" placeholder="Email*">
-                <input class="input-name" type="text" name="name" placeholder="Name*">
-                <input class="input-subject" type="text" name="subject" placeholder="Subject">
-                <textarea class="textarea-message" name="message" placeholder="Message..."></textarea>
-                <input type="hidden" name="tomail" value="iyasiken@gmail.com">
-                <input class="submit-send" type="submit" value="SEND">
-              </form>-->
           <% end %>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
