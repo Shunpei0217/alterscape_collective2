@@ -320,8 +320,8 @@ main {
 
 .virtual-reality {
   position: relative;
-  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1)),
-  url("https://dl.dropboxusercontent.com/s/lso5ltb5ejojzfu/vr_boy_bg.png");
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1));
+  /*url("https://dl.dropboxusercontent.com/s/lso5ltb5ejojzfu/vr_boy_bg.png");*/
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -362,11 +362,19 @@ main {
   margin: 0;
 }
 
+.explore-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
 .explore-section h2 {
   transition: 0.3s;
   position: absolute;
-  top: 19.5%;
-  left: 32%;
+  top: 27.5%;
+  left: 25%;
   font-family: termina, sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -376,7 +384,7 @@ main {
   border: 1px solid rgba(0,0,0,0);
   border-radius: 20px;
   text-align: center;
-  line-height: 140px;
+  line-height: 135px;
   letter-spacing: 2px;
 }
 
@@ -825,7 +833,7 @@ footer {
 }
 
 .footer-right ul {
-  width: 100%;
+  width: 65%;
   height: 100%;
   margin-left: 35%;
 }
@@ -849,7 +857,7 @@ footer {
 
 .footer-right p {
   position: absolute;
-  bottom: 3%;
+  bottom: 5%;
   right: 1%;
   font-size: 13px;
   color: lightgrey;
@@ -967,16 +975,17 @@ footer {
   height: 196.88px;
 }
 
-.projects-content p {
+.project-thumbnail {
+  /*width: 100%;*/
+}
+
+.project-thumbnail p {
   font-family: roboto, sans-serif;
   font-style: normal;
   font-weight: 300;
   width: 400px;
   margin-left: 55%;
-}
-
-.project-thumbnail {
-  width: 100%;
+  margin-top: 8%;
 }
 
 /*----------ここまでがprojectsページ----------*/
@@ -1030,7 +1039,7 @@ footer {
 
 .webgl-content {
   position: absolute;
-  top: 20% !important;
+  top: 22% !important;
 }
 
 .invisible-block {
@@ -1073,6 +1082,10 @@ footer {
   margin: 0 auto;
   text-align: center;
   margin-top: 3%;
+}
+
+.demystifying-epilepsy-title h2 {
+  margin-bottom: 10px;
 }
 
 .vr-description-container {
@@ -1241,7 +1254,7 @@ footer {
 .support-bg-video {
   position: relative;
   width: 100%;
-  background-size: cover;
+  /*background-size: cover;*/
   z-index: -1;
 }
 
