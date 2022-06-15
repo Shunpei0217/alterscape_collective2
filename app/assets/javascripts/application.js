@@ -16,6 +16,17 @@
 //= require jquery
 //= require jquery_ujs
 
+function isSmartPhone() {
+  if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+    let element = document.getElementByClass('main-content');
+    element.removeClass('main-content');
+    element.addClass('sp-content');
+    return true;
+  } else {
+    return false;
+  }
+}
+
 $(function(){
   $(window).scroll(function (){
     $(".scroll_fade").each(function(){
