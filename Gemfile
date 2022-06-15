@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '3.1.2'
 
 gem 'dotenv-rails' #環境変数をENVの形にするやつ
 
@@ -69,3 +69,4 @@ group :production do
 end
 
 gem "jquery-rails"
+gem "jpmobile"
