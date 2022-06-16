@@ -1,5 +1,10 @@
 {
   "name": "alterscape_collective",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "^5.4.3"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^4.9.2"
+  }
 }

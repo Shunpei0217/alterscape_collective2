@@ -35,3 +35,10 @@ app/assets/javascripts/Build/WebGLFinal.data.unityweb
 .git/objects/0d/c0ed70d9fd02cdf34a36a4231a4a9113536521
 .git/objects/36/1eb109db80537c917c885d5e6f32f915da2e07
 .git/lfs/objects/aa/f8/aaf854840eabc6798aad8b86d205961776ce28f78441c7b1cd836a2b98174adf
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
