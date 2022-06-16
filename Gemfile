@@ -11,6 +11,7 @@ gem 'bootsnap',   '1.10.3', require: false
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'rails-ujs', '~> 0.1.0'
 gem 'coffee-rails'
+gem 'uglifier'
 
 group :development, :test do
   gem 'sqlite3', '1.4.1'
