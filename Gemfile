@@ -12,9 +12,9 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'rails-ujs', '~> 0.1.0'
 gem 'coffee-rails'
 gem 'uglifier'
+gem 'pg'
 
 group :development, :test do
-  gem 'sqlite3', '1.4.1'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
